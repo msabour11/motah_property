@@ -148,6 +148,16 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
+
+scheduler_events = {
+    "cron": {
+        "*/2 * * * *": [  # Runs the job every 2 minutes
+            "motah_property.overrides.change_room_status.change_room_status_from_booked_to_open"
+        ]
+    },
+}
+
+
 # scheduler_events = {
 # 	"all": [
 # 		"motah_property.tasks.all"
@@ -241,4 +251,3 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-
