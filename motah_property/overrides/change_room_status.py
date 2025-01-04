@@ -51,4 +51,4 @@ def change_room_status_from_booked_to_open():
                     property_doc.save()
                 frappe.db.commit()  # Commit the changes to the database
 
-    return invoices_er
+    return "sucessfully"
