@@ -151,7 +151,7 @@ app_license = "mit"
 
 scheduler_events = {
     "cron": {
-        "*/2 * * * *": [  # Runs the job every 2 minutes
+        "*/10 * * * *": [  # Runs the job every 2 minutes
             "motah_property.overrides.change_room_status.change_room_status_from_booked_to_open"
         ]
     },
